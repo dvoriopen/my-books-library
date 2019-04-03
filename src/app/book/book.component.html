@@ -1,0 +1,17 @@
+<div class="panel">
+  <div class="panel-body">
+     <h1>{{book.title}}</h1>
+     <div class="row">
+        <span>Author: &nbsp;</span>
+        <label>{{book.author}}</label>
+     </div>
+     <div class="row">
+        <span>Date: &nbsp;</span>
+        <label>{{book.date | date}}</label>
+     </div>
+     <div class="row">
+        <button class="btn btn-primary" (click)="edit(book)">Edit</button>   
+        <button class="btn btn-primary" (click)="delete(book)">Delete</button>   
+     </div>
+  </div>
+</div>
